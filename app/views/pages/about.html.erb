@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Star Wars</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%= stylesheet_link_tag "application", media: 'all' %>
+      <%= javascript_include_tag 'application' %>
+      <meta name="viewport" content="width_device-width, initial-scale=1">
+  </head>
+
+  <body class="aboutBody">
+    <div class="about">
+        <h1> Star Wars Movies API </h1>
+        <p>Welcome to the swapi, the Star Wars API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. If you're after a native helper library then I suggest you scroll down and check out what's available. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it. </p>
+        <div class="button">
+            <a href="/films"><button type="button"> Movie List </button></a>
+            <a href="/people"><button type="button"> Character List </button></a>
+            <a href="/films"><button type="button"> ERD </button></a>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(49, 49, 49);
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navBar {
+  background-color: rgba(75, 75, 75, 0.87);
+  top: -3.5vh;
+  position: relative;
+}
+
+.navBar h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 30px;
+}
+
+.navBar ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navBar li {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  letter-spacing: 1.1px;
+  transition: 0.3s background-color;
+  font-size: 13pt;
+}
+
+.navBar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navBar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Films page */
+
+.filmSearch {
+  color: white;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+#films h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 35%;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(92, 92, 92, 0.829);
+}
+
+.a-primary,
+.filmExit {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  letter-spacing: 1.1px;
+}
+
+/* Characters Page */
+
+.people {
+  background-color: rgb(92, 92, 92);
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  color: white;
+}
+
+.person-wrapper {
+  background-color: rgb(92, 92, 92);
+  width: 80%;
+  padding: 10px;
+}
+
+.personLink {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+/* About Page */
+
+.about {
+  margin: auto;
+  width: 55%;
+  position: relative;
+  top: 12vh;
+  height: 400px;
+  border-radius: 5px;
+  background-color: rgba(83, 83, 83, 0.815);
+}
+
+.about h1 {
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(235, 233, 233);
+}
+
+.about p {
+  padding-top: 10px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 15pt;
+  color: white;
+  line-height: 120%;
+}
+
+.button {
+  margin: 0;
+  margin-top: 5px;
+  padding-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button button {
+  display: block;
+  margin: auto;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  font-size: 13pt;
+  border-radius: 5px;
+  width: 30%;
+  background-color: rgb(236, 236, 236);
+}

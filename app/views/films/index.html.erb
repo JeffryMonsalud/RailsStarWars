@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Star Wars</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%= stylesheet_link_tag "application", media: 'all' %>
+      <%= javascript_include_tag 'application' %>
+      <meta name="viewport" content="width_device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="navBar">
+      <h1> Star Wars API </h1>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="films">Movies</a></li>
+          <li><a href="people">Characters</a></li>
+        </ul>
+          <div class="filmSearch">
+            <h3>All Movies</h3>
+          </div>
+    </div>
+
+    <div id="films">
+      <% @films.each do |film| %>
+        <h3><%= link_to film['title'], film, class: "a-primary" %></h3>
+      <% end %>
+    </div>
+  </body>
+</html>
