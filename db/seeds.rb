@@ -1,5 +1,5 @@
 FilmPerson.delete_all
-Person.delete_all
+People.delete_all
 Film.delete_all
 
 films = RestClient.get 'https://swapi.dev/api/films/'
@@ -41,7 +41,7 @@ personJson["results"].each do | person |
     end
 end
 
-puts "Created #{Person.count} people"
+puts "Created #{People.count} people"
 puts "Created #{Film.count} films"
 puts "Created #{FilmPerson.count} references"
 

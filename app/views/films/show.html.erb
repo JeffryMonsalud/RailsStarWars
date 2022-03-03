@@ -8,24 +8,24 @@
       <%= javascript_include_tag 'application' %>
       <meta name="viewport" content="width_device-width, initial-scale=1">
   </head>
-
   <body>
     <div class="navBar">
-      <h1> Star Wars API </h1>
-        <ul>
-          <li><a href="/">Characters</a></li>
-          <li><a href="films">Movies</a></li>
+      <div class="logo"> 
+        <h1>Star Wars API</h1>
+      </div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="/">About</a></li>
+          <li><a href="/films">Movies</a></li>
           <li><a href="/people">Characters</a></li>
-        </ul>
+        </div>
+      </ul>
     </div>
-
     <div class="film-wrapper">
       <div id="film">
-
         <%= render @film %>
-        <%= link_to "Back to films", films_path, class: "filmExit" %>
+        <%= link_to "Return to Movie List", films_path, class: "filmExit" %>
       </div>
     </div>
-
   </body>
 </html>

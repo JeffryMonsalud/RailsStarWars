@@ -7,7 +7,7 @@ class FilmsController < ApplicationController
 
   # GET /films/1 or /films/1.json
   def show
-    @film = Film.find(params[:id])
+    @film = Film.includes(:people)
   end
 
   # GET /films/new

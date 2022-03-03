@@ -10,17 +10,20 @@
   </head>
   <body>
     <div class="navBar">
-      <h1> Star Wars API </h1>
-        <ul>
+      <div class="logo"> 
+        <a href="/"><h1> Star Wars API </h1></a>
+      </div>
+      <ul class="nav-links">
+        <div class="menu">
           <li><a href="/">About</a></li>
           <li><a href="films">Movies</a></li>
           <li><a href="people">Characters</a></li>
-        </ul>
-          <div class="filmSearch">
-            <h3>All Movies</h3>
-          </div>
+        </div>
+      </ul>
     </div>
-
+    <div class="movieTitles">
+      <h2>ALL MOVIES<h2>
+    </div>
     <div id="films">
       <% @films.each do |film| %>
         <h3><%= link_to film['title'], film, class: "a-primary" %></h3>

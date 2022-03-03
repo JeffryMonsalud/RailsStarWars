@@ -12,12 +12,12 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_03_02_224633) do
   create_table "film_people", force: :cascade do |t|
-    t.integer "person_id", null: false
+    t.integer "people_id", null: false
     t.integer "film_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["film_id"], name: "index_film_people_on_film_id"
-    t.index ["person_id"], name: "index_film_people_on_person_id"
+    t.index ["people_id"], name: "index_film_people_on_people_id"
   end
 
   create_table "films", force: :cascade do |t|
@@ -45,5 +45,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_02_224633) do
   end
 
   add_foreign_key "film_people", "films"
-  add_foreign_key "film_people", "people"
+  add_foreign_key "film_people", "people", column: "people_id"
 end

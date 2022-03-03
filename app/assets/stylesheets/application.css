@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   background-color: rgb(49, 49, 49);
   background-image: url("background.jpg");
   background-size: cover;
@@ -8,27 +9,38 @@ body {
 }
 
 .navBar {
-  background-color: rgba(75, 75, 75, 0.87);
-  top: -3.5vh;
+  background-color: rgba(59, 59, 59, 0.87);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 30px;
+  color: white;
 }
 
-.navBar h1 {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  padding-top: 30px;
+.nav-links a {
+  color: white;
 }
 
-.navBar ul {
+.logo {
+  font-size: 12pt;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
   list-style: none;
-  text-align: center;
-  padding: 0;
-}
-
-.navBar li {
-  display: inline-block;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding: 5px 14px;
 }
 
 .navBar a {
@@ -38,6 +50,7 @@ body {
   letter-spacing: 1.1px;
   transition: 0.3s background-color;
   font-size: 13pt;
+  margin-right: 50px;
 }
 
 .navBar a:hover {
@@ -45,38 +58,105 @@ body {
   color: black;
 }
 
-.navBar a.active {
-  background-color: #04aa6d;
-  color: white;
+/* ABOUT PAGE */
+
+.about {
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 12vh;
+  height: 360px;
+  border-radius: 5px;
+  background-color: rgba(59, 59, 59, 0.87);
 }
 
-/* Films page */
-
-.filmSearch {
-  color: white;
+.about h1 {
   text-align: center;
-  padding-bottom: 3px;
+  padding-top: 20px;
+  color: rgb(235, 233, 233);
+}
+
+.about p {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 15pt;
+  color: white;
+  line-height: 120%;
+}
+
+.button {
+  margin: 0;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button button {
+  display: block;
+  margin: auto;
+  padding-left: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+  border-radius: 5px;
+  width: 25%;
+  background-color: rgb(236, 236, 236);
+}
+
+/* FILMS PAGE */
+
+.movieTitles h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 #films h3 {
   text-align: center;
   color: rgb(255, 255, 255);
-  width: 35%;
+  width: 30%;
   margin: auto;
   font-weight: bold;
   margin-bottom: 15px;
   border-radius: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(92, 92, 92, 0.829);
+  background-color: rgba(59, 59, 59, 0.87);
 }
 
-.a-primary,
-.filmExit {
-  color: white;
+.film-wrapper {
+  background-color: rgba(59, 59, 59, 0.87);
+  color: rgb(245, 245, 245);
+  width: 55%;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  top: 8vh;
+  margin: auto;
+}
+
+.a-primary {
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-weight: lighter;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.05px;
+  font-weight: bold;
+}
+
+.filmExit {
+  color: rgb(197, 216, 174);
+  text-decoration: none;
+  letter-spacing: 1.05px;
+  font-weight: bold;
 }
 
 /* Characters Page */
@@ -101,56 +181,4 @@ body {
   text-align: center;
   letter-spacing: 1px;
   font-weight: lighter;
-}
-
-/* About Page */
-
-.about {
-  margin: auto;
-  width: 55%;
-  position: relative;
-  top: 12vh;
-  height: 400px;
-  border-radius: 5px;
-  background-color: rgba(83, 83, 83, 0.815);
-}
-
-.about h1 {
-  text-align: center;
-  padding-top: 20px;
-  color: rgb(235, 233, 233);
-}
-
-.about p {
-  padding-top: 10px;
-  width: 85%;
-  margin: auto;
-  text-align: center;
-  font-size: 15pt;
-  color: white;
-  line-height: 120%;
-}
-
-.button {
-  margin: 0;
-  margin-top: 5px;
-  padding-top: 20px;
-}
-
-.button a {
-  text-decoration: none;
-}
-
-.button button {
-  display: block;
-  margin: auto;
-  padding-left: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 10px;
-  margin-bottom: 5px;
-  font-size: 13pt;
-  border-radius: 5px;
-  width: 30%;
-  background-color: rgb(236, 236, 236);
 }
